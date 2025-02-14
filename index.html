@@ -4,45 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <div id="clock">
-        <div id="time">
-            <h1  id="date"></h1>
-        </div>
-        <button id="stop-alarm"> stop Alarm</button>
-    </div>
-    <div id="setAlarm">
-    <div class="set-time">
-        <select>
-            <option value="setHour">hour</option>
-        </select>
-    </div>
-    <div id="set-time">
-            <select>
-                <option value="setMinute">minute</option>
-            </select>
-        </div>
-        <div class="set-time">
-            <select>
-                <option value="setsecond">sconds</option>
-            </select>
-        </div>
-        <div class="set-time">
-            <select>
-                <option value="setperiod">am/pm</option>
-            </select>
-        </div>
-        <div class="set-time">
-            <select>
-                <button class="alarm-button">set alarm</button>
-            </select>
-        </div>
-        </div>
-        <h3 style="text-align: center;font-size:35px">alarms</h3>
-        <div id="alarmlist"></div>
-        </div>
-        <script src=""></script>
+    <h1 id="show"></h1>
+    <input type="time" id="currenttime">
+    <button onclick="sett()">set alarm</button>
+    <audio src="C:\Users\dell\Downloads\mixkit-digital-clock-digital-alarm-buzzer-992.wav" id="music"></audio>
+    <script src="alarm.js"></script>
 </body>
 </html>
