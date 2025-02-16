@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    /* background-color: cornflowerblue; */
+    color: white;
+  }
+  
+  #clock div{
+    display: grid;
+    justify-content: center;
+  }
+  #clock div img{
+    margin-top: 1rem;
+    border-radius: 1rem;
+  }
+  
+  #currenttime{
+    display: grid;
+    gap: 1rem;
+  }
+  #clock input{
+    outline: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  #alarm1 button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius:1rem;
+    border: none;
+    background-color:rgb(170, 54, 125);
+    color: white;
+  }
+  
+  
+  #clock{
+    background-color:hotpink;
+    width: 30%;
+    border-radius: 2rem;
+    padding: 0rem 0rem 1rem 0rem;
+  }
+  
+  #h1{
+    margin-left: 6rem;
+    margin-top: 1rem;
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .alarm-status {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-10px);
+    }
+    40% {
+      transform: translateX(10px);
+    }
+    60% {
+      transform: translateX(-10px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
+  
+  @media (max-width:450px) {
+    #style{
+        width: 80%;
+    }
+  
+    #h1{
+        margin-left: 4rem;
+        
+    }
+    
+    #clock input{
+        padding: 8px 16px;
+      }
+  }
+  
